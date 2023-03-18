@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "flats",
+  "collectionName": "cards",
   "info": {
-    "singularName": "flat",
-    "pluralName": "flats",
-    "displayName": "Flat",
-    "description": ""
+    "singularName": "card",
+    "pluralName": "cards",
+    "displayName": "Card"
   },
   "options": {
     "draftAndPublish": true
@@ -15,19 +14,15 @@
     "title": {
       "type": "string"
     },
-    "desc": {
-      "type": "text"
-    },
     "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
