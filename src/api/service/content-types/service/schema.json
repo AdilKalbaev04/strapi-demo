@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "flats",
+  "collectionName": "services",
   "info": {
-    "singularName": "flat",
-    "pluralName": "flats",
-    "displayName": "Flat",
-    "description": ""
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
   },
   "options": {
     "draftAndPublish": true
@@ -15,19 +14,18 @@
     "title": {
       "type": "string"
     },
-    "desc": {
-      "type": "text"
-    },
     "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "average": {
+      "type": "integer"
     }
   }
 }
